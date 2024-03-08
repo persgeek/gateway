@@ -4,7 +4,7 @@ namespace PG\Gateway;
 
 class Response
 {
-    const VARIABLE_PATTERN = '/(@|#)([a-z_.]+)/i';
+    const VARIABLE_PATTERN = '/(@|#)([a-z0-9_.]+)/i';
 
     protected $response;
 
