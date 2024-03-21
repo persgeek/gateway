@@ -105,6 +105,8 @@ class Gateway
 
         if ($this->isJson) {
             $params = json_encode($params);
+        } else {
+            $params = http_build_query($params);
         }
 
         return $this->send($address, $headers, $params, $this->method);
