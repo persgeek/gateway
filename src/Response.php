@@ -62,14 +62,16 @@ class Response
 
     protected function getVariables()
     {
+        $listOfVariables = [];
+
         $variables = $this->findVariables();
 
         foreach ($variables as $variable) {
 
-            $variables[$variable] = substr($variable, 1);
+            $listOfVariables[$variable] = substr($variable, 1);
         }
 
-        return $variables;
+        return $listOfVariables;
     }
 
     public function getTranslatedContent()
