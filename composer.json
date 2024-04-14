@@ -1,0 +1,24 @@
+{
+    "name": "persgeek/gateway",
+    "description": "Gateway",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "PG\\Gateway\\": "src/"
+        },
+        "files": [
+            "helpers.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Saeed Johari",
+            "email": "persgeek@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.3",
+        "laravel/helpers": "^1.7"
+    }
+}
